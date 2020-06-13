@@ -32,7 +32,7 @@ n_computadora = generar_numero()
 while jugando:
     n_usuario = pedir_numero(lista_intentos)
 
-    if n_usuario == 'q':
+    if n_usuario == False:
         jugando = False
     elif n_usuario != None:
         jugando = comprobar_numero(n_computadora, n_usuario, lista_intentos, lista_resultados)

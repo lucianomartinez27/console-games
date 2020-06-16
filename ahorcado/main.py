@@ -11,6 +11,7 @@ lista_letras = []
 lista_errores = []
 palabra = random.choice(lista_palabras).upper()    
 
+os.system('clear')
 while jugando:
     print('='* 30)
     print('EL AHORCADO'.center(30))
@@ -21,8 +22,7 @@ while jugando:
     if letra != "":
         if letra in lista_letras or letra in lista_errores:
             os.system('clear')
-            print()
-            print('YA HAS ELEGIDO ESA LETRA')
+            print('YA HAS ELEGIDO ESA LETRA'.center(30))
         elif letra in palabra:
             lista_letras.append(letra)
             os.system('clear')
@@ -31,8 +31,7 @@ while jugando:
             os.system('clear')
     else:
         os.system('clear')
-        print()
-        print('INGRESA UNA LETRA')
+        print('INGRESA UNA LETRA'.center(30))
 
     if len(lista_errores) == 6:
         print("=" * 30)
